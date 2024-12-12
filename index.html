@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Energia Renovável</title>
+    <script src="/js/javascript.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<!-- Inicio do body com imagem de fundo. -->
+
+<body style="background-image: url(img/background_home.jpg);">
+
+    <!-- Cabeçalho com botões para trocar de página. -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="produto.html">Produto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br><br>
+
+    <!-- Um título com formato de botão. -->
+    <div class="caixa-botao">
+        <button class="botao-sem-click"><b>Internet das Coisas</b></button>
+    </div>
+
+    <!-- Título como introdução. -->
+    <section id="intro">
+        <h1>Conectando o <span style="color: #6ee618;">Mundo<br> Físico ao Digital</span></h1>
+    </section>
+
+    <!-- Texto da introdução. -->
+    <section id="intro">
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;A Internet das Coisas (IoT) é uma revolução tecnológica que conecta<br>
+            dispositivos físicos à internet, permitindo que eles coletem, compartilhem<br>
+            e processem dados de forma autônoma e em tempo real. Essa inovação está<br>
+            redefinindo como vivemos, trabalhamos e nos conectamos ao mundo, unindo<br>
+            o físico ao digital de maneira transformadora e inteligente.</p>
+    </section>
+
+    <!-- Botões logo abaixo da introdução. -->
+    <div class="caixa-botao">
+        <button class="botao-verde" id="voltar-play"
+            onclick="ocultarVideo(); aparecerBotaoplay(); esconderBotaovoltarplay()" style="display: none;">Fechar
+            Vídeo</button>
+        <button class="botao-play" id="play" onclick="mostrarVideo();esconderBotaoplay(); aparecerBotaovoltar()">&#9658
+            Veja uma demonstração.</button>
+        <div id="meu-video" style="display: none;">  <!-- Div para carregar vídeo usando iframe. -->
+            <iframe width="620" height="440" src="https://www.youtube.com/embed/Ikvs6B2591M?si=vOtSw7bneXsPU3NO"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <br><br><br><br>
+    
+    <!-- Rodapé. -->
+    <footer>
+        <strong>&copy; 2024 Internet das Coisas. Todos os direitos reservados.</strong>
+    </footer>
+</body>
+
+</html>

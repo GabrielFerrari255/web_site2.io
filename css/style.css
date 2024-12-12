@@ -1,0 +1,513 @@
+* {
+    margin: 0;
+    /* Espaçamento da margem. */
+    padding: 0;
+    box-sizing: border-box;
+    /* Para sumir o scroll */
+}
+
+body {
+    font-family: Arial, sans-serif;    /* Fonte */
+    line-height: 1.6;    /* Espaçamento entre as linhas */
+    background-repeat: no-repeat;    /* Não repite a imagem */
+    background-size: cover;    /* Se adapta a área. */
+    background-position: center;    /* Centraliza o fundo */
+    margin: 0;    /* Espaçamento da margem. */
+    min-height: 100vh;    /* Garante que o corpo tenha pelo menos a altura da tela. */
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        background-size: cover;        /* Se adapta a área. */
+        background-position: center;        /* Centraliza a imagem. */
+        background-attachment: scroll;        /* Acompanha scroll pode ser mudado para fixed depois. */
+    }
+}
+
+
+header {
+    background-color: #00796b;    /* Cor de fundo do header. */
+    padding: 10px;    /* Distância entre o texto e a borda do header. */
+    border-radius: 20px;    /* Para arredondar os cantos do header. */
+    margin: 15px;    /* Distância do header para não encostar em nada */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;    /* Disposição do conteúdo dentro do header. */
+    justify-content: space-around;
+    margin-bottom: 0px;
+}
+
+nav ul li a {
+    color: white;    /* Cor do texto dentro do header. */
+    text-decoration: none;    /* Tira a decoração antes do texto no header. */
+}
+
+/* Estilos de caixas para conteúdos. */
+section {
+    display: flex;    /* Disposição dos elementos. */
+    padding: 20px;    /* Espaço entre o texto e a borda. */
+}
+
+.caixa-botao {
+    display: flex;    /* Disposição dos elementos. */
+    gap: 30px;    /* Espaço entre os botões. */
+    padding-left: 50px;    /* Espaço entre os botões e o fim da página a esquerda. */
+    background-color: rgba(255, 255, 255, 0.904);    /* Cor de fundo. */
+    width: 30%;    /* Largura. */
+    white-space: nowrap;    /* Para o texto não quebrar. */
+}
+
+.conteudos {
+    display: flex;    /* Disposição dos elementos. */
+    flex-wrap: wrap;    /* Para os itens se quebrarem */
+    justify-content: space-around;    /* Para distribuir o coteúdo de forma uniforme */
+    margin: 20px;    /* Espaçamento da margem. */
+    padding-left: 200px;    /* Espaço para não encostar no lado esquerdo da página */
+    padding-right: 200px;    /* Espaço para não encostar no lado direito da página */
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+
+}
+
+.table-produto {
+    display: table;
+    width: 75%;
+    border-collapse: collapse;
+    align-content: flex-start;
+    background-color: rgba(255, 255, 255, 0.979);
+    margin: auto;
+}
+
+/* Classe imagem do produto */
+
+.imagem-produto {
+    width: auto;
+    height: auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .imagem-produto {
+        width: 0%;
+    }
+}
+
+.coluna {
+    display: table-cell;
+    border: 0px solid #ccc;
+    padding: 10px;
+    text-align: left;
+    width: auto;
+    vertical-align: middle;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    background-color: white;
+}
+
+.device-list {
+    width: 300px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.device-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.device-item:last-child {
+    border-bottom: none;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+    background-color: #f0f0f0;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.device-text {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* FIM */
+
+/* Mudança no estilo ao reduzir o tamanho da página. */
+@media only screen and (max-width: 830px) {
+    .conteudos {
+        padding-left: 0px;        /* Para tirar o espamento anterior */
+        padding-right: 0px;
+    }
+}
+
+.conteudo-caixas {
+    display: flex;
+    flex-direction: column;    /* Organiza os elementos em coluna */
+    align-items: center;    /* Centraliza horizontalmente */
+    text-align: center;    /* Garante que o texto fique centralizado */
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    padding: 20px;
+    margin: 15px;    /* Espaçamento da margem. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.conteudo-caixas h3 {
+    color: #007BFF;
+    margin-top: 0;    /* Espaçamento da margem. */
+}
+
+.conteudo-caixas p {
+    color: #555;
+}
+
+.conteudo-caixas:hover {
+    transform: translateY(-5px);
+}
+
+/* FIM */
+
+/* Estilo dos botões. */
+.botao-verde {
+    background-color: rgb(13, 199, 13);    /* Cor de fundo verde. */
+    color: white;    /* Cor do texto branca. */
+    border: none;    /* Remove a borda padrão. */
+    padding: 10px 20px;    /* Espaçamento interno (vertical e horizontal). */
+    font-size: 16px;    /* Tamanho da fonte. */
+    cursor: pointer;    /* Muda o cursor para indicar que é clicável. */
+    border-radius: 25px;    /* Bordas arredondadas. */
+    transition: background-color 0.3s;    /* Transição suave para a cor de fundo. */
+}
+
+.botao-play {
+    background: none;    /* Sem fundo */
+    border-radius: 20px;    /* Sem borda */
+    color: black;    /* Cor do ícone */
+    padding: 10px 20px;    /* Espaçamento interno (vertical e horizontal). */
+    font-size: 16px;    /* Tamanho da fonte. */
+    cursor: pointer;    /* Muda o cursor para indicar que é clicável */
+    transition: transform 0.2s;    /* Transição suave para o efeito de clique */
+}
+
+.botao-play:hover {
+    transform: scale(1.1);    /* Aumenta o tamanho ao passar o mouse */
+}
+
+.botao-verde:hover {
+    background-color: darkgreen;    /* Cor de fundo ao passar o mouse */
+}
+
+.botao-sem-click {
+    background: none;    /* Sem fundo */
+    border-radius: 20px;    /* Sem borda */
+    border-color: greenyellow;
+    color: rgb(0, 0, 0);    /* Cor do ícone */
+    padding: 10px 20px;    /* Espaçamento interno (vertical e horizontal). */
+    font-size: 16px;    /* Tamanho da fonte. */
+}
+
+/* FIM */
+
+/* Estilos de texto */
+h1 {
+    font-size: 3rem;    /* Tamanho da fonte */
+    text-align: center;    /* Alinhar o texto ao centro */
+    padding-left: 120px;    /* Espaço a esquerda do texto */
+}
+
+@media only screen and (max-width: 560px) {
+    h1 {
+        padding-left: 0px;
+    }
+}
+
+.titulo-sobre {
+    font-size: 3rem;    /* Tamanho da fonte */
+    text-align: center;    /* Alinhar o texto ao centro */
+    font-weight: bold;    /* Negrito */
+    text-shadow: 2px 2px 5px rgba(30, 76, 15, 0.291);
+    padding-right: 40px;
+}
+
+.titulo-contato {
+    font-size: 3rem;    /* Tamanho da fonte */
+    text-align: center;    /* Alinhar o texto ao centro */
+    font-weight: bold;    /* Negrito */
+    text-shadow: 2px 2px 5px rgba(30, 76, 15, 0.291);
+    padding-right: 90px;
+}
+
+h2 {
+    color: #004d40;    /* Cor do texto dentro das tags h1 e h2 */
+}
+
+p {
+    text-align: center;    /* Alinhar o texto ao centro */
+    font-size: 1.1em;    /* Tamanho da fonte */
+    padding-left: 50px;    /* Espaço a esquerda do texto */
+    background-color: rgba(255, 255, 255, 0.918);    /* Fundo para aparecer melhor o texto */
+    border-radius: 30px;    /* Bordas redondas para o fundo */
+}
+
+@media only screen and (max-width: 560px) {
+    p {
+        padding-left: 0px;
+    }
+}
+
+.texto-cinza {
+    color: grey;
+    margin: auto;
+}
+
+/* Estilo texto da página sobre */
+.texto-sobre {
+    padding-left: 220px;
+    padding-right: 220px;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+
+/* FIM */
+
+/* Estilo do footer */
+footer {
+    background-color: #00796b;    /* Cor de fundo do footer. */
+    color: white;    /* Cor do texto dentro do footer */
+    text-align: center;    /* Alinhamento do texto dentro do footer */
+    padding: 5px;    /* Distância entre o texto e a borda do footer. */
+    position: fixed;    /* Para travar a posição no fim da página */
+    width: 100%;    /* Largura do footer (100% Página inteira) */
+    bottom: 0;    /* Sem espaço entre footer e fim da página */
+}
+
+/* FIM */
+
+/* Estilos para contato. */
+
+.mapa {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Icones */
+.icons {
+    margin: 0 10px;
+    font-size: 5rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.icons:hover {
+    color: greenyellow;
+}
+
+/* Div Cadastro */
+.caixa-cadastro {
+    display: table-cell;
+    border: 0px solid #ccc;
+    text-align: left;
+    width: auto;
+    line-height: 17px;
+}
+
+/* Efeito do campo de digitação do formulário */
+.label-float {
+    position: relative;
+    display: flex;
+    align-items: baseline;
+    gap: 10px;
+    margin-bottom: 2px;
+    padding-top: 16px;
+    font-family: Arial, sans-serif;
+    font-size: 1em;
+    border: 0px solid #ccc;
+    background-color: white;
+}
+
+.label-float input {
+    border: 0;
+    border-bottom: 2px solid rgb(106, 105, 160);
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.label-float input:focus {
+    border-bottom: 2px solid #3951b2;
+}
+
+.label-float input::placeholder {
+    color: transparent;
+}
+
+.label-float::placeholder {
+    margin-top: 20px;
+}
+
+.label-float label {
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    -moz-transition: all .3s ease-out;
+}
+
+.label-float input:focus:required:invalid {
+    border-bottom: 2px solid red;
+}
+
+.label-float2 input:focus:required:invalid {
+    border-bottom: 2px solid red;
+}
+
+.label-float input:focus+label,
+.label-float input:not(:placeholder-shown)+label {
+    font-size: 13px;
+    margin-top: 0;
+    color: #3951b2;
+}
+
+fieldset {
+    background-color: rgb(255, 255, 255);
+    border: 40px inset rgba(13, 199, 13, 0.767);
+    padding: 30px;
+    position: relative;
+    border-radius: 10px;
+}
+
+/* Área para o comentário */
+textarea {
+    width: 100%;
+    max-width: 515px;
+    height: 150px;
+    padding: 12px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    resize: vertical;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    outline: none;
+}
+
+/* Efeito hover */
+textarea:hover {
+    border-color: #aaa;
+}
+
+/* Efeito focus */
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+/* Placeholder estilizado */
+textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+/* FAQ */
+
+.faq-container {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.faq-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.faq-subtitle {
+    text-align: center;
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.faq-question i {
+    transition: transform 0.3s;
+}
+
+.faq-answer {
+    display: none;
+    padding-top: 10px;
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Mostrar resposta quando a classe 'active' estiver presente */
+.faq-item.active .faq-answer {
+    display: block;
+}
+
+.faq-item.active .faq-question i {
+    transform: rotate(180deg);
+}
+
+/* Accordion classes novas */
+
+.accordion-edit {
+    width: 50%;
+    margin: auto;
+}

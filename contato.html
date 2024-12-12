@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Energia Renovável</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="/js/javascript.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<!-- Inicio do body com imagem de fundo. -->
+<body style="background-image: url(img/backgroundcontato.jpg);">
+
+    <!-- Cabeçalho com botões para trocar de página. -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="produto.html">Produto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+    <div class="titulo-contato">
+        <h1>Siga<span style="color: #6ee618;"> nossas redes sociais.</span></h1>
+    </div>
+
+    <br><br>
+
+    <!-- Div com icones. -->
+    <div class="titulo-contato">
+
+        <a class="icons" target="_blank" href="#">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a class="icons" target="_blank" href="#">
+            <i class="fab fa-twitter"></i>
+        </a>
+
+        <a class="icons" target="_blank" href="#">
+            <i class="fab fa-linkedin"></i>
+        </a>
+
+        <a class="icons" target="_blank" href="#">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+    </div>
+
+    <br><br>
+
+    <div class="titulo-contato">
+        <h1>Entre em contato para<span style="color: #6ee618;"> saber mais.</span></h1>
+    </div>
+
+    <br><br>
+
+    <!-- Formulário. -->
+    <div class="form-container">
+            <form action="#" method="POST">
+                <fieldset>
+                    <div class="caixa-cadastro">
+                        <!-- Nome -->
+                        <div class="label-float">
+                            <input type="text"
+                                required size="60"
+                                pattern="[aA-zZ ]{4,50}"
+                                placeholder=" "/>
+                                <label>Nome</label>
+                                </div>
+
+                        <!-- Email -->
+                        <div class="label-float">
+                            <input type="email"
+                                id="email"
+                                required size="60"
+                                required
+                                placeholder="Ex: teste@gmail.com..."/>
+                                <label>Email </label>
+                        </div>
+
+                        <!-- Celular -->
+                        <div class="label-float">
+                            <input type="text"
+                                pattern="[0-9]{1,50}"
+                                required size="60"
+                                placeholder="Ex: (99)9999-9999..."
+                                required/>
+                            <label>Celular</label>
+                        </div>
+                        <br>
+
+                        <!-- Mensagem -->
+                        <label>Comentário:</label><br><textarea class="msg" cols="78" rows="8"></textarea><br>
+                    
+                        <!-- Botões -->
+                        <button type="submit">Enviar</button>
+                        <input type="reset" value="Limpar Dados"/>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+
+    <br><br>
+
+    <!-- Mapa -->
+        <div class="mapa">
+            <div class="titulo-contato">
+                <h1>Onde estamos</h1>
+            </div>
+            <br>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38185.419805616286!2d114.23895849321465!3d-1.2284490901642335!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dfbfa180cfb81bf%3A0xe15182fe0fc7bdef!2sBajoog%2C%20Dandang%2C%20Pasak%20Talawang%2C%20Kapuas%20Regency%2C%20Kalimantan%20Central%2C%20Indon%C3%A9sia!5e1!3m2!1spt-BR!2sbr!4v1731543349268!5m2!1spt-BR!2sbr" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <p>
+                Link para Google Maps:
+                <a href="https://maps.app.goo.gl/isUrWmNnMTHmFbhw7">https://maps.app.goo.gl/isUrWmNnMTHmFbhw7</a>.
+              </p>
+        </div>
+    <footer>
+        <strong>&copy; 2024 Internet das Coisas. Todos os direitos reservados.</strong>
+    </footer>
+</body>
+</html>
